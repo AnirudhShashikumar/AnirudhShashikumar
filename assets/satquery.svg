@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="192" viewBox="0 0 960 192" role="img" aria-labelledby="title desc">
+  <title id="title">SatQuery AI — flagship research</title>
+  <desc id="desc">An abstract satellite observation flows through a neural model to spatial evidence. All shapes are schematic, not real satellite imagery or model results.</desc>
+  <defs>
+    <linearGradient id="bg"><stop stop-color="#0d1b26"/><stop offset="1" stop-color="#101323"/></linearGradient>
+    <linearGradient id="beam"><stop stop-color="#62dce7" stop-opacity="0"/><stop offset="1" stop-color="#62dce7" stop-opacity=".16"/></linearGradient>
+    <clipPath id="tile"><rect x="488" y="42" width="132" height="110" rx="8"/></clipPath>
+  </defs>
+  <style>
+    .scan{animation:scan 10s ease-in-out infinite alternate}
+    @keyframes scan{from{transform:translateX(0)}to{transform:translateX(108px)}}
+    @media(prefers-reduced-motion:reduce){.scan{animation:none}}
+  </style>
+  <rect x=".5" y=".5" width="959" height="191" rx="14" fill="url(#bg)" stroke="#30445b"/>
+  <path d="M1 35V15Q1 1 15 1H150" stroke="#69dbe4" stroke-width="2" fill="none"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <text x="32" y="49" font-size="12" letter-spacing="2" fill="#77dae5">FLAGSHIP / REMOTE SENSING</text>
+    <text x="30" y="100" font-size="40" font-weight="700" fill="#f1f6fc">SatQuery AI</text>
+    <text x="32" y="135" font-size="17" fill="#b4c8db">From observation to evidence.</text>
+    <text x="32" y="162" font-size="12" fill="#91a9c1" letter-spacing="1">SAR + OPTICAL + TEMPORAL</text>
+  </g>
+  <!-- Abstract observation tile; no synthetic performance claims. -->
+  <g clip-path="url(#tile)">
+    <rect x="488" y="42" width="132" height="110" fill="#132b38"/>
+    <path d="m485 79 38-43 22 49 39-49 39 31M482 126l54-42 19 66 46-57 25 61" stroke="#3a6572" stroke-width="17" fill="none"/>
+    <path d="m514 40 29 33-15 34 39 20 7 31" stroke="#87bbc7" stroke-width="3" fill="none"/>
+    <g class="scan"><rect x="488" y="42" width="24" height="110" fill="url(#beam)"/><path d="M512 42V152" stroke="#78e4e7" stroke-opacity=".65"/></g>
+  </g>
+  <rect x="488" y="42" width="132" height="110" rx="8" fill="none" stroke="#47717e"/>
+  <g fill="none" stroke="#4b6381"><path d="M634 97h34m-7-5 7 5-7 5M775 97h34m-7-5 7 5-7 5"/><path d="m696 58 51 19-51 20 51 20-51 19m0-78 51 59m-51-20 51-20m-51 59 51-59"/></g>
+  <g fill="#7ea5f0"><circle cx="696" cy="58" r="5"/><circle cx="696" cy="97" r="5"/><circle cx="696" cy="136" r="5"/><circle cx="747" cy="77" r="5"/><circle cx="747" cy="117" r="5"/></g>
+  <rect x="823" y="42" width="105" height="110" rx="8" fill="#172333" stroke="#496079"/>
+  <path d="m830 122 22-55 25 35 24-35 23 63" fill="none" stroke="#435b71" stroke-width="10"/>
+  <path d="M845 83V68h16m36 0h15v15m0 32v14h-15m-36 0h-16v-14" stroke="#78dbdc" stroke-width="2" fill="none"/>
+  <path d="m865 100 8 8 16-20" stroke="#8adfd5" stroke-width="2" fill="none"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">Anirudh Shashikumar — Engineering the Next Era of AI.</title>
+  <desc id="desc">A dark research interface with a slowly orbiting satellite around a neural globe. AI / ML, computer vision, full-stack, research.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#101b2a"/><stop offset="1" stop-color="#080d16"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#65e5ec"/><stop offset=".55" stop-color="#559aff"/><stop offset="1" stop-color="#a89afa"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#18566c" stop-opacity=".28"/><stop offset="1" stop-color="#101824" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#849bbc" stroke-opacity=".055"/></pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="958" height="298" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .sans{font-family:Arial,Helvetica,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,monospace}
+    .orbit{transform-origin:785px 145px;animation:orbit 42s linear infinite}
+    .signal{animation:signal 7s ease-in-out infinite}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes signal{0%,100%{opacity:.45}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.orbit,.signal{animation:none}}
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="960" height="300" fill="url(#surface)"/>
+    <rect width="960" height="300" fill="url(#grid)"/>
+    <ellipse cx="790" cy="150" rx="220" ry="210" fill="url(#halo)"/>
+    <!-- Orbital instrument: decorative, never a fabricated metric. -->
+    <g fill="none" stroke="#46617a" stroke-width="1">
+      <circle cx="785" cy="145" r="88"/>
+      <ellipse cx="785" cy="145" rx="39" ry="88"/>
+      <ellipse cx="785" cy="145" rx="70" ry="88"/>
+      <ellipse cx="785" cy="145" rx="88" ry="32"/>
+      <ellipse cx="785" cy="145" rx="88" ry="63"/>
+      <path d="M697 145h176M785 57v176"/>
+      <circle cx="785" cy="145" r="110" stroke="#31465d" stroke-dasharray="2 8"/>
+      <ellipse cx="785" cy="145" rx="139" ry="49" transform="rotate(-33 785 145)" stroke="#69cbd8" stroke-opacity=".5"/>
+    </g>
+    <g stroke="#6ee7ed" stroke-opacity=".7" fill="none"><path d="m728 116 52-32 57 40-15 65-68 19-26-92 94 73-42-105-26 124 83-84"/></g>
+    <g fill="#83edf0" class="signal"><circle cx="728" cy="116" r="3"/><circle cx="780" cy="84" r="3"/><circle cx="837" cy="124" r="3"/><circle cx="822" cy="189" r="3"/><circle cx="754" cy="208" r="3"/></g>
+    <g class="orbit"><circle cx="785" cy="35" r="4" fill="#9deff2"/><circle cx="785" cy="35" r="9" fill="none" stroke="#5dd7e1" stroke-opacity=".4"/></g>
+    <path d="M36 35h18M36 35v18M924 247v18h-18" stroke="#5bbfca" stroke-opacity=".6" fill="none"/>
+    <text x="54" y="50" fill="#99afc3" font-size="12" letter-spacing="2.3" class="mono">RESEARCH → PRODUCTION</text>
+    <text x="52" y="114" fill="#f3f7fc" font-size="41" font-weight="700" letter-spacing="-.9" class="sans">ANIRUDH SHASHIKUMAR</text>
+    <text x="54" y="162" fill="url(#accent)" font-size="28" font-weight="500" class="sans">Engineering the Next Era of AI.</text>
+    <text x="54" y="203" fill="#b2c3d5" font-size="12" letter-spacing="1.05" class="mono">AI / ML · COMPUTER VISION · FULL-STACK · RESEARCH</text>
+    <path d="M54 233H906" stroke="#27374b"/>
+    <circle cx="59" cy="260" r="3" fill="#6ee7d7"/>
+    <text x="73" y="264" fill="#a5b8cd" font-size="11" letter-spacing="1.1" class="mono">BUILDING INTELLIGENT SYSTEMS</text>
+    <text x="906" y="264" fill="#99afc3" font-size="11" text-anchor="end" letter-spacing="1.1" class="mono">BENGALURU, IN</text>
+  </g>
+  <rect x=".5" y=".5" width="959" height="299" rx="18" fill="none" stroke="#304159"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="340" viewBox="0 0 480 340" role="img" aria-labelledby="title desc">
+  <title id="title">Anirudh Shashikumar — Engineering the Next Era of AI.</title>
+  <desc id="desc">Mobile research interface. AI / ML, computer vision, full-stack, research. Bengaluru, India.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#101b2a"/><stop offset="1" stop-color="#080d16"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#65e5ec"/><stop offset="1" stop-color="#a89afa"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#849bbc" stroke-opacity=".055"/></pattern>
+  </defs>
+  <style>
+    .sans{font-family:Arial,Helvetica,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,monospace}
+    .orbit{transform-origin:418px 49px;animation:orbit 30s linear infinite}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.orbit{animation:none}}
+  </style>
+  <rect x="1" y="1" width="478" height="338" rx="16" fill="url(#surface)"/>
+  <rect x="1" y="1" width="478" height="338" rx="16" fill="url(#grid)"/>
+  <g fill="none" stroke="#4c778c"><circle cx="418" cy="49" r="22"/><ellipse cx="418" cy="49" rx="10" ry="22"/><path d="M396 49h44"/><circle cx="418" cy="49" r="32" stroke-dasharray="2 6"/></g>
+  <g class="orbit"><circle cx="418" cy="17" r="3" fill="#83edf0"/></g>
+  <text x="28" y="49" fill="#a6bed0" font-size="13" letter-spacing="1.4" class="mono">RESEARCH → PRODUCTION</text>
+  <text x="26" y="111" fill="#f3f7fc" font-size="43" font-weight="700" letter-spacing="-.7" class="sans">ANIRUDH</text>
+  <text x="26" y="160" fill="#f3f7fc" font-size="43" font-weight="700" letter-spacing="-.7" class="sans">SHASHIKUMAR</text>
+  <text x="28" y="203" fill="url(#accent)" font-size="24" class="sans">Engineering the Next Era of AI.</text>
+  <text x="28" y="241" fill="#b2c3d5" font-size="13" letter-spacing=".7" class="mono">AI / ML · COMPUTER VISION</text>
+  <text x="28" y="263" fill="#b2c3d5" font-size="13" letter-spacing=".7" class="mono">FULL-STACK · RESEARCH</text>
+  <path d="M28 286H452" stroke="#304159"/>
+  <circle cx="32" cy="310" r="3" fill="#6ee7d7"/>
+  <text x="45" y="314" fill="#a5b8cd" font-size="12" letter-spacing=".7" class="mono">BUILDING</text>
+  <text x="452" y="314" fill="#99afc3" font-size="12" text-anchor="end" class="mono">BENGALURU, IN</text>
+  <rect x=".5" y=".5" width="479" height="339" rx="16" fill="none" stroke="#304159"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="104" viewBox="0 0 600 104" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution visualization pending</title>
+  <desc id="desc">The first successful GitHub Actions run will replace this placeholder with the real contribution calendar.</desc>
+  <!-- pending-first-run: deliberately no simulated contribution data -->
+  <rect x=".5" y=".5" width="599" height="103" rx="10" fill="#0d1724" stroke="#30465d"/>
+  <text x="24" y="43" fill="#bed0e1" font-family="Arial,Helvetica,sans-serif" font-size="18">Contribution animation is being prepared.</text>
+  <text x="24" y="73" fill="#bed0e1" font-family="Arial,Helvetica,sans-serif" font-size="15">Available after the first successful workflow run.</text>
+</svg>

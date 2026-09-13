@@ -1,0 +1,57 @@
+name: Refresh contribution snake
+
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/snake.yml'
+      - 'scripts/prepare_snake.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'AnirudhShashikumar/AnirudhShashikumar' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; Node 24
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Generate from the real contribution calendar
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3; Node 24
+        with:
+          github_user_name: AnirudhShashikumar
+          outputs: |
+            assets/generated/contributions.svg?color_snake=#0e7490&color_dots=#e8eef4,#badce5,#79bbc9,#36879b,#145c70
+            assets/generated/contributions-dark.svg?palette=github-dark&color_snake=#80e6e5&color_dots=#162332,#214352,#2b6a7a,#4299a7,#76ccd2
+
+      - name: Validate images and create reduced-motion variant
+        run: python3 scripts/prepare_snake.py
+
+      - name: Commit changed images
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/generated/contributions.svg assets/generated/contributions-dark.svg assets/generated/contributions-static.svg
+          if git diff --cached --quiet; then
+            echo 'Contribution images are unchanged.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh contribution visualization [skip ci]'
+          git push origin "HEAD:${DEFAULT_BRANCH}"
