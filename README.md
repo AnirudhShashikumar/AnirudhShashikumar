@@ -174,9 +174,6 @@ Public, non-fork, non-archived, enabled, non-empty repositories owned by Anirudh
 
 ### Contribution signal
 
-<details>
-<summary>Follow the signal through my contribution history</summary>
-
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/generated/contributions-static.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/generated/contributions-dark.svg">
@@ -184,8 +181,6 @@ Public, non-fork, non-archived, enabled, non-empty repositories owned by Anirudh
 </picture>
 
 <sub>GitHub contribution history · daily refresh · light, dark, and static views.</sub>
-
-</details>
 
 <img src="assets/divider.svg" width="960" alt="">
 
