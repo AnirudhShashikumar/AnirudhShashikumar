@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="18" viewBox="0 0 960 18">
-  <defs><linearGradient id="line"><stop stop-color="#3eb6c2" stop-opacity="0"/><stop offset=".3" stop-color="#3eb6c2" stop-opacity=".6"/><stop offset=".7" stop-color="#857ee6" stop-opacity=".5"/><stop offset="1" stop-color="#857ee6" stop-opacity="0"/></linearGradient></defs>
-  <path d="M0 9H960" stroke="url(#line)"/>
-  <path d="m470 9 5-4 5 4-5 4z" fill="#55bec8"/>
-  <circle cx="488" cy="9" r="2" fill="#928bea"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="20" viewBox="0 0 960 20" role="img" aria-labelledby="title desc">
+<title id="title">Signal trace</title><desc id="desc">Decorative section divider.</desc>
+<defs></defs>
+<style>:root{--bg:#09121e;--panel:#101f30;--inset:#0c1927;--ink:#eff5fb;--muted:#a4b8cc;--border:#30465d;--grid:#20374e;--cyan:#71e3e5;--blue:#88b5ff;--violet:#b6a8f5;--trace:#456b89;}
+.packet{stroke-dasharray:2 98;stroke-dashoffset:100;animation:packet 16s linear infinite}
+.reply{animation-delay:-8s;stroke:var(--violet)}
+.node{animation:node 8s ease-in-out infinite}.late{animation-delay:-3s}
+@keyframes packet{0%,12%{stroke-dashoffset:100;opacity:0}18%{opacity:1}65%{stroke-dashoffset:0;opacity:1}75%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes node{0%,100%{opacity:.45}45%,60%{opacity:1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<path d="M0 10H405l10-5h45l10 5H960" stroke="#476b80" fill="none" stroke-opacity="0.4"/><path d="M0 10H405l10-5h45l10 5H960" stroke="#4eabb7" fill="none" pathLength="100" stroke-width="1.8" class="packet"/>
 </svg>

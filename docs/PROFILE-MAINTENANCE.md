@@ -1,65 +1,122 @@
-# Profile maintenance
+# Profile V2 maintenance
 
-This profile is prepared for the public repository `AnirudhShashikumar/AnirudhShashikumar`. The supplied local directory was empty and had no Git history. The public profile repository returned HTTP 404 during the audit on 2026-09-14; no existing profile README or assets were overwritten.
+V2 is a **local, uncommitted upgrade** of the working profile. No V2 commit, push, workflow dispatch, or publication was performed.
 
-## Publish
+The checkout originally pointed at `9e3e3fa949de44bccc4697fcbe31ecb15300e9c3`. It was clean and one generated-assets commit behind the live repository. A local fast-forward brought in the already-published commit **`b2f9084a623ec00ae80f39b61d7062c2b2e002b9`**, which is the V1 rollback baseline. No new commit was created by that operation. A complete V1 copy and checksum manifest are preserved in ignored `.preview/v1/` and `.preview/v1-manifest.json`.
 
-Create the public profile repository with the exact name `AnirudhShashikumar`, if needed, and commit these files to its `main` branch. GitHub displays a matching public repository's root README on the account profile. This delivery does not create or push a remote repository.
+## Working contribution system: preserved
 
-The initial push containing `snake.yml` starts the contribution workflow. You can also choose **Actions → Refresh contribution snake → Run workflow**. If your default branch is not `main`, update the workflow's push branch filter; scheduled and manual runs already use the configured default branch.
+These five files are byte-identical to the live V1 baseline:
 
-The workflow runs at **02:23 UTC / 07:53 IST daily**, on relevant pushes to `main`, and manually. GitHub can delay scheduled runs or disable schedules on inactive public repositories. It uses only the built-in `GITHUB_TOKEN`, with repository-content write permission scoped to the refresh job. No personal access token is required. Repository or organization policy must allow Actions and the bot's commits to the default branch. If branch protection blocks that write, adapt publishing to a pull request or dedicated assets branch before enabling the schedule.
+- `.github/workflows/snake.yml`
+- `scripts/prepare_snake.py`
+- `assets/generated/contributions.svg`
+- `assets/generated/contributions-dark.svg`
+- `assets/generated/contributions-static.svg`
 
-Both actions are pinned to full upstream commit SHAs, verified through GitHub's API, and use Node 24. Dependabot checks GitHub Actions monthly. The workflow commits only the three generated SVGs, skips unchanged output, avoids force pushes, and serializes refresh runs. A concurrent human push can safely reject the bot's push; rerun the workflow in that case. The generated-file commit does not match the workflow's push paths.
+The existing [contribution run](https://github.com/AnirudhShashikumar/AnirudhShashikumar/actions/runs/34778299282) was inspected and reported **success**. It runs at **02:23 UTC / 07:53 IST daily**, on relevant pushes, and manually. V2 changes its presentation to “Contribution signal”; the generator, paths, palettes, static fallback, schedule, permissions, and action pins remain intact.
 
-## Design and structure
+## New public telemetry
 
-The visual concept is an orbital research interface: charcoal surfaces, cyan signal paths, blue model nodes, and a restrained violet accent. Native GitHub typography carries the content. The README reads in this order:
+`.github/workflows/telemetry.yml` runs at **02:43 UTC / 08:13 IST daily**, manually, and after changes to its workflow, generator, visual helpers, or tests are pushed to `main`. The scheduled/manual job also checks that it is on the repository's configured default branch. Update the push filter if the default branch is renamed.
 
-1. Responsive animated hero and navigation.
-2. `SYSTEM://PROFILE` introduction.
-3. Currently building: SatQuery AI, the flagship.
-4. Selected projects: Dayflow, MediFit, Gesture Globe.
-5. Research focus.
-6. Engineering stack.
-7. Recognition.
-8. GitHub activity and an expandable contribution snake.
-9. Connect.
+The job uses the existing pinned `actions/checkout` version, runs the telemetry tests, fetches public data, then commits only `README.md` and the five telemetry outputs. It uses the built-in `GITHUB_TOKEN`; no PAT, external stats service, new account, or package install is required. Contents-write permission is scoped to the refresh job. Existing Dependabot configuration covers the new workflow.
 
-The flagship plus three single-column HTML cards makes four featured projects. Each includes a repository link, purpose, technical description, and stack. Tables contain only one project per row and no fixed column widths. About, research, stack, and achievements remain selectable text that wraps with GitHub's own layout. Additional terminal/research/achievement SVGs were deliberately omitted because they would duplicate text and reduce mobile readability.
+Both workflows share the existing `contribution-snake` concurrency group. The new workflow adopts that group so the proven workflow does not need editing. The staggered schedules reduce overlap; the shared group serializes repository-writing runs. Neither job force-pushes. A concurrent human push can safely reject a bot push; rerun the affected job after reviewing the branch.
 
-`assets/header.svg` uses a 42-second orbit and a 7-second soft node pulse. `header-mobile.svg` uses a 30-second compact orbit with larger type. `satquery.svg` uses a slow 10-second alternating scan restricted to a schematic observation tile. `satquery-mobile.svg` uses a static neural motif and larger text. All custom motion uses internal SVG CSS, has a legible still state, and stops under `prefers-reduced-motion`. `divider.svg` is intentionally static.
+`python3 scripts/generate_telemetry.py` maintains:
 
-All graphics are native vectors with no fonts, raster data, scripts, `foreignObject`, or external resources embedded. Opaque dark panels preserve contrast in both GitHub themes. The mobile hero is selected with a `<picture>` media source. Essential project information is repeated as native text beneath the decorative flagship panel, so a scaled illustration never hides the content.
+- `assets/generated/telemetry.svg` and `telemetry-light.svg`
+- `assets/generated/telemetry-mobile.svg` and `telemetry-mobile-light.svg`
+- `assets/generated/telemetry.json`
+- Only the region between `<!-- telemetry:start -->` and `<!-- telemetry:end -->` in `README.md`
 
-The contribution snake uses actual GitHub contribution data via [Platane/snk](https://github.com/Platane/snk). It is collapsed by default and chooses dark/light variants with `<picture>`. A static variant is selected for reduced-motion readers. The checked-in initial assets explicitly say they are waiting for a workflow run; they show no invented contribution grid. Failed runs leave the previous committed images available. Routine generated-asset commits are visible in repository history; do not interpret this animation as a productivity score.
+Do not hand-edit that marker region. The image, its alt text, and the expandable text snapshot are rendered from the same data.
 
-## Source audit and editorial decisions
+### Data definitions
 
-Public metadata, root READMEs, recursive file trees, and selected implementation files were inspected. No benchmark, adoption, accuracy, star, streak, follower, or contribution counts were copied into the profile.
+The generator paginates GitHub's public user-repository endpoint. A source project is owned by this account, public, non-fork, non-archived, enabled, non-empty, and not the profile repository. “Pushed in 90 days” uses GitHub's `pushed_at`, not `updated_at`, commits authored, production status, or deployments. Primary languages are GitHub's dominant language classifications for those source repositories, ordered by repository frequency and then alphabetically for ties. They do not measure expertise or framework use.
 
-| Project | Evidence and decision |
-| :--- | :--- |
-| [SatQuery AI](https://github.com/AnirudhShashikumar/SatQuery-AI) | Root README documents single-image, optical/SAR, and bi-temporal modes; Sentinel-1/2; FastAPI; PyTorch; Pix2Pix; experimental SARFusionFormer. Its source tree includes inference, evaluation, and model files. The profile retains the distinction between synthetic visualizations and observations. |
-| [Dayflow](https://github.com/AnirudhShashikumar/Dayflow) | README and test tree support role-based HR workflows, Next.js, Supabase/PostgreSQL RLS, and Vitest. No claim of audited security, real customer adoption, or completed production acceptance testing is made. |
-| [MediFit](https://github.com/AnirudhShashikumar/MediFit) | Root README is older than the nested application. [Nested README](https://github.com/AnirudhShashikumar/MediFit/blob/main/mediFit-main/README.md), `ai_engine.py`, frontend `package.json`, and fitness/lab/health components support React + TypeScript + Vite, FastAPI, and Gemini. The profile avoids the older Next.js/Supabase description and unverified clinical-grade claims. No public repository named MediTwin was found, so the card uses the verified MediFit name. Digital-twin ideas from the brief are not presented as a verified implemented system. |
-| [Gesture Globe](https://github.com/AnirudhShashikumar/gesture-globe) | README and source tree support MediaPipe gesture tracking, Three.js, Next.js, TypeScript, and gesture-to-transform mapping. No frame-rate or device-performance promises were repeated. Selected as the fourth project because it demonstrates applied vision and graphics. |
-| [TwinFit](https://github.com/AnirudhShashikumar/TwinFit) | Reviewed metadata and source tree; includes mock-data-driven application scaffolding and committed dependencies. Not selected over the stronger, more distinct four projects. |
-| [VeilGraph](https://github.com/AnirudhShashikumar/VeilGraph) | Public metadata marks it as a fork. Omitted because the account's specific contribution/ownership was not established. |
+The JSON records scope, timestamp, source endpoint, included repositories, counts, primary languages, and the two latest repository push dates. The renderer labels the data as a dated snapshot. The initial snapshot was fetched successfully from GitHub locally; the new hosted workflow has not yet run.
 
-Name, student status, Bengaluru location, interests, and achievements come from the user's supplied brief. In a follow-up the user confirmed that the 130-team win was Inception 2.0, so those two initial entries were combined into one award. Achievements were not independently verified, and no dates, team ownership, event affiliation, or awards were inferred from other repositories.
+All API pages and metadata are checked before writing. Failed/partial responses, rate limits, duplicate pagination results, or missing marker pairs fail the refresh. Each local file replacement is atomic; CI only commits after the complete generator succeeds. A filesystem failure may leave incomplete *local* replacements, but the failed CI step prevents publishing them. A failed run never replaces the hosted snapshot with zeroes or a fake “live” status.
 
-The GitHub profile API had no public email, blog, location, or bio. The reviewed public project documentation had no verified personal contact links. The user then explicitly supplied `https://www.linkedin.com/in/anirudh-shashikumar` and `Anirudh.shashikumar@gmail.com`; these exact contacts are included. Project deployment homepages existed in repository metadata, but were not treated as a personal portfolio or proof of a working backend.
+## Rebuild and check locally
 
-## Information to add
+```bash
+python3 scripts/build_visuals.py
+python3 -m unittest discover -s tests -v
+python3 scripts/generate_telemetry.py
+git diff --check
+```
 
-- Personal portfolio URL. Replace the clearly marked text placeholder in the Connect section when available; do not publish a dummy link.
-- Optional public award evidence. The supplied achievement wording is retained without invented dates.
+The first command rebuilds the 17 design SVGs and never touches the contribution files. It uses only Python's standard library. Telemetry performs a public API request and updates its timestamp; an optional `GITHUB_TOKEN` increases the available API quota. Never commit a token.
 
-## Compatibility and validation
+If actionlint is installed:
 
-GitHub-supported Markdown, HTML tables, `<picture>`, `<details>`, repository-hosted SVG images, and normal anchors are the only README building blocks. The README contains no custom HTML CSS or JavaScript. CSS exists only within external SVG image files.
+```bash
+actionlint .github/workflows/snake.yml .github/workflows/telemetry.yml
+```
 
-Reference: [GitHub writing quickstart](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github), [collapsed sections](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections), [secure action usage](https://docs.github.com/en/actions/reference/security/secure-use), and [snake action documentation](https://github.com/Platane/snk).
+## Responsive theme behavior
 
-The hosted profile and its first scheduled workflow can only be verified after publishing. Local browser checks and GitHub's Markdown rendering API are documented in `VERIFICATION.md`.
+The design uses explicit dark/light SVG palettes and full mobile compositions. GitHub's current `themed-picture` component replaces the complete `media` value of color-scheme sources when a site theme is forced, which discards combined width conditions. This behavior was inspected in the live site's component before delivery.
+
+For the five new responsive visual modules, V2 therefore separates concerns:
+
+- A pair of links ending in GitHub's existing `#gh-dark-mode-only` / `#gh-light-mode-only` theme selectors chooses the palette.
+- Each contains a standard `<picture>` whose source uses **only** `(max-width: 600px)` to choose the mobile composition.
+- The existing contribution picture retains its working theme-only and reduced-motion queries.
+
+The theme-link selectors were verified in GitHub's currently served global CSS. No custom HTML CSS or JavaScript is embedded in the README. The local preview harness reproduces those selectors and the site's picture-source rewriting. This avoids relying on a browser-only combined query that would break in GitHub's live renderer.
+
+Outside GitHub, an ordinary Markdown renderer may show both palette variants. Use the supplied preview harness when reviewing locally. If GitHub removes its existing theme-link selectors, revisit this mechanism; the content remains readable, but duplicate visual modules could appear. Keep that limitation in mind when changing the image markup.
+
+## Publishing — only after approval
+
+These commands have **not** been run. They assume this checkout is still on `main`, with only the reviewed V2 changes. Inspect the diff before staging. The fresh telemetry command may change its dated snapshot if public repository data has changed.
+
+```bash
+cd '/Users/anirudhshashikumar/Documents/Projects/AnirudhShashikumar profile repository'
+git status --short
+python3 scripts/build_visuals.py
+python3 -m unittest discover -s tests -v
+python3 scripts/generate_telemetry.py
+git diff --check
+git add -A -- README.md assets scripts tests docs .github/workflows/telemetry.yml
+git commit -m 'Upgrade profile to Research → Production V2'
+git fetch origin main
+git rebase origin/main
+git push origin main
+```
+
+If rebase reports a conflict, resolve and review it before pushing; `git rebase --abort` returns to the local committed V2 state. Never force-push. The new workflow should start from its initial push. Inspect the hosted README and the first telemetry run after publishing. No GitHub Pages or hosting deployment is involved.
+
+## Roll back before publishing
+
+The ignored `.preview/v2/review.patch` contains the complete reviewed V1→V2 source change, including added/deleted files. Its forward and reverse application were tested against the V1 archive. These exact commands restore the reviewed worktree to V1 without changing Git history or remote state:
+
+```bash
+cd '/Users/anirudhshashikumar/Documents/Projects/AnirudhShashikumar profile repository'
+git apply --reverse --check .preview/v2/review.patch
+git apply --reverse .preview/v2/review.patch
+```
+
+If you have edited V2 since delivery, the check can fail; preserve those edits and inspect the conflict instead of forcing the patch. The patch is a review artifact, not a tracked runtime dependency.
+
+## Roll back after publishing
+
+Use a new rollback commit, not a history rewrite. The following restores the V1 design while retaining the latest contribution outputs and its working workflow. It removes only V2 files; keep additional work elsewhere out of this rollback.
+
+```bash
+cd '/Users/anirudhshashikumar/Documents/Projects/AnirudhShashikumar profile repository'
+git switch main
+git pull --ff-only origin main
+git restore --source=b2f9084a623ec00ae80f39b61d7062c2b2e002b9 --worktree -- README.md assets/divider.svg assets/header.svg assets/header-mobile.svg assets/satquery.svg assets/satquery-mobile.svg docs/PROFILE-MAINTENANCE.md docs/VERIFICATION.md
+git rm -- .github/workflows/telemetry.yml assets/hero-v2*.svg assets/satquery-v2*.svg assets/project-map*.svg assets/research-pipeline*.svg assets/generated/telemetry* scripts/build_visuals.py scripts/generate_telemetry.py tests/test_telemetry.py docs/V2-REVIEW.md
+git add -- README.md assets/divider.svg assets/header.svg assets/header-mobile.svg assets/satquery.svg assets/satquery-mobile.svg docs/PROFILE-MAINTENANCE.md docs/VERIFICATION.md
+git commit -m 'Restore V1 profile while preserving contribution updates'
+git push origin main
+```
+
+Avoid running rollback while a telemetry job is writing; cancel or let that run finish first. The rollback removes the telemetry workflow and keeps `snake.yml`. These commands have been documented, not executed on the live repository.

@@ -1,114 +1,189 @@
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/header-mobile.svg">
-  <img src="assets/header.svg" width="960" alt="Anirudh Shashikumar — Engineering the Next Era of AI. AI / ML · Computer Vision · Full-Stack · Research.">
-</picture>
+<a href="assets/hero-v2.svg#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/hero-v2-mobile.svg">
+    <img src="assets/hero-v2.svg" width="960" alt="Anirudh Shashikumar — Engineering the Next Era of AI. AI / ML · Computer Vision · Full-Stack · Research. Research → Production: observe, reason, build, validate, deploy.">
+  </picture>
+</a>
+<a href="assets/hero-v2-light.svg#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/hero-v2-mobile-light.svg">
+    <img src="assets/hero-v2-light.svg" width="960" alt="Anirudh Shashikumar — Engineering the Next Era of AI. AI / ML · Computer Vision · Full-Stack · Research. Research → Production: observe, reason, build, validate, deploy.">
+  </picture>
+</a>
 
 <p align="center">
-  <a href="#currently-building">Current work</a> &nbsp; / &nbsp;
-  <a href="#selected-projects">Projects</a> &nbsp; / &nbsp;
-  <a href="#research-focus">Research</a> &nbsp; / &nbsp;
+  <a href="#current-mission">Current work</a> &nbsp; / &nbsp;
+  <a href="#project-constellation">Projects</a> &nbsp; / &nbsp;
+  <a href="#intelligence-pipeline">Research</a> &nbsp; / &nbsp;
+  <a href="#github-telemetry">Activity</a> &nbsp; / &nbsp;
   <a href="#connect">Connect</a>
 </p>
 
 ### `SYSTEM://PROFILE`
 
-I'm **Anirudh**, a Computer Science Engineering student in **Bengaluru, India**. I build across AI, computer vision, remote sensing, and full-stack development—taking research ideas into usable software.
+I'm **Anirudh**, a Computer Science Engineering student building across AI, computer vision, remote sensing, and full-stack engineering—taking research ideas into usable software.
 
-**Current focus:** intelligent systems with clear evidence, reliable inference, and thoughtful product interfaces.
+| Mode | Research → Production |
+| :--- | :--- |
+| **Current** | SatQuery AI · remote-sensing intelligence |
+| **Base** | Bengaluru, India |
+| **Mission** | Turn complex data into usable evidence. |
+
+**Explore my systems:** [SatQuery AI](https://github.com/AnirudhShashikumar/SatQuery-AI) · [Dayflow](https://github.com/AnirudhShashikumar/Dayflow) · [MediFit](https://github.com/AnirudhShashikumar/MediFit) · [Gesture Globe](https://github.com/AnirudhShashikumar/gesture-globe)
 
 <img src="assets/divider.svg" width="960" alt="">
 
-## Currently building
+## Current mission
 
-<a href="https://github.com/AnirudhShashikumar/SatQuery-AI">
+<a href="https://github.com/AnirudhShashikumar/SatQuery-AI#gh-dark-mode-only">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/satquery-mobile.svg">
-    <img src="assets/satquery.svg" width="960" alt="SatQuery AI — flagship remote-sensing research. A schematic connects satellite observations, model inference, and spatial evidence.">
+    <source media="(max-width: 600px)" srcset="assets/satquery-v2-mobile.svg">
+    <img src="assets/satquery-v2.svg" width="960" alt="Project 01 — SatQuery AI. Observe: SAR and optical inputs. Analyze: intelligence core. Investigate: spatial evidence. Workflow schematic, not actual sensor imagery or model results.">
+  </picture>
+</a>
+<a href="https://github.com/AnirudhShashikumar/SatQuery-AI#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/satquery-v2-mobile-light.svg">
+    <img src="assets/satquery-v2-light.svg" width="960" alt="Project 01 — SatQuery AI. Observe: SAR and optical inputs. Analyze: intelligence core. Investigate: spatial evidence. Workflow schematic, not actual sensor imagery or model results.">
   </picture>
 </a>
 
-**Earth observation, with the evidence attached.**
+**[SatQuery AI](https://github.com/AnirudhShashikumar/SatQuery-AI) · From observation to evidence.** Natural-language querying for single-image, optical + SAR, and bi-temporal remote-sensing analysis.
 
-SatQuery AI brings natural-language queries, single-image analysis, optical + SAR fusion, and bi-temporal change analysis into one evidence-oriented remote-sensing workflow.
+- **Observe:** Sentinel-1 SAR (VV / VH) and Sentinel-2 optical imagery.
+- **Analyze:** visual question answering, spatial grounding, and change detection through specialist models and FastAPI inference.
+- **Investigate:** Pix2Pix and experimental SARFusionFormer for SAR-to-optical translation. **Generated optical-like imagery is not observed optical sensor data.**
 
-- **Observe:** Sentinel-1 SAR, including VV / VH polarization, and Sentinel-2 optical imagery.
-- **Analyze:** visual question answering, spatial grounding, and change detection through specialist models and a FastAPI backend.
-- **Investigate:** Pix2Pix and experimental SARFusionFormer for SAR-to-optical translation. Generated optical-like imagery remains distinct from observed sensor data.
+`Python` `PyTorch` `Transformers` `FastAPI`
 
-`Python` `PyTorch` `Transformers` `FastAPI` `Computer Vision`
+## Project constellation
 
-[Explore the repository ↗](https://github.com/AnirudhShashikumar/SatQuery-AI)
-
-## Selected projects
+<a href="assets/project-map.svg#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/project-map-mobile.svg">
+    <img src="assets/project-map.svg" width="960" alt="Four systems connected by research-to-production engineering: SatQuery AI—remote sensing; MediFit—applied AI; Gesture Globe—vision and interaction; Dayflow—full-stack systems. Conceptual connections, not expertise scores.">
+  </picture>
+</a>
+<a href="assets/project-map-light.svg#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/project-map-mobile-light.svg">
+    <img src="assets/project-map-light.svg" width="960" alt="Four systems connected by research-to-production engineering: SatQuery AI—remote sensing; MediFit—applied AI; Gesture Globe—vision and interaction; Dayflow—full-stack systems. Conceptual connections, not expertise scores.">
+  </picture>
+</a>
 
 <table>
 <tr><td>
-<sub>01 / FULL-STACK SYSTEMS</sub>
-<h3><a href="https://github.com/AnirudhShashikumar/Dayflow">Dayflow ↗</a></h3>
-<p><strong>A complete workspace for the working day.</strong><br>HRMS spanning employee self-service, attendance, leave, payroll, and document workflows.</p>
-<p>Employee, HR, and admin access is enforced across application routes and PostgreSQL row-level security, with audit history and automated tests.</p>
+<p><code>PROJECT://02</code> &nbsp; <strong><a href="https://github.com/AnirudhShashikumar/Dayflow">Dayflow ↗</a></strong> &nbsp; <sub>FULL-STACK SYSTEMS</sub></p>
+<p>A complete workspace for the working day: HR workflows with role-based portals, PostgreSQL row-level security, audit history, and automated tests.</p>
 <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>PostgreSQL</code> <code>Vitest</code></p>
 </td></tr>
-</table>
-
-<table>
 <tr><td>
-<sub>02 / APPLIED AI</sub>
-<h3><a href="https://github.com/AnirudhShashikumar/MediFit">MediFit ↗</a></h3>
-<p><strong>Health information, connected and understandable.</strong><br>An AI-assisted health application exploring medication interactions, lab-report insights, and personalized fitness workflows.</p>
-<p>Connects a Gemini-powered Python backend to a typed React interface, with medication-context analysis and multimodal report parsing.</p>
+<p><code>PROJECT://03</code> &nbsp; <strong><a href="https://github.com/AnirudhShashikumar/MediFit">MediFit ↗</a></strong> &nbsp; <sub>APPLIED AI</sub></p>
+<p>Health information, connected: Gemini-assisted medication-context analysis and multimodal lab-report insights in a typed React application.</p>
 <p><code>React</code> <code>TypeScript</code> <code>Python</code> <code>FastAPI</code> <code>Gemini</code></p>
 </td></tr>
-</table>
-
-<table>
 <tr><td>
-<sub>03 / VISION × INTERACTION</sub>
-<h3><a href="https://github.com/AnirudhShashikumar/gesture-globe">Gesture Globe ↗</a></h3>
-<p><strong>A world you can move with your hands.</strong><br>A browser-based 3D Earth controlled through real-time hand landmarks and gestures.</p>
-<p>Maps palm movement, pinch, and two-hand gestures into smooth globe rotation and scale, connecting computer vision to an interactive graphics system.</p>
+<p><code>PROJECT://04</code> &nbsp; <strong><a href="https://github.com/AnirudhShashikumar/gesture-globe">Gesture Globe ↗</a></strong> &nbsp; <sub>VISION × INTERACTION</sub></p>
+<p>A world you can move with your hands: real-time hand landmarks mapped to smooth rotation and scale on a browser-based 3D Earth.</p>
 <p><code>MediaPipe</code> <code>Three.js</code> <code>Next.js</code> <code>TypeScript</code></p>
 </td></tr>
 </table>
 
-## Research focus
+## Intelligence pipeline
 
-**From visual signals to intelligent systems.**
+**The problems I explore, from visual signals to usable systems.**
 
-- **Perception:** computer vision, deep learning, and remote-sensing representations.
-- **Generation:** transformers, generative models, and image-to-image translation.
-- **Reasoning:** multimodal AI, evidence fusion, and temporal change understanding.
-- **Deployment:** inference APIs, evaluation workflows, and AI-assisted software development.
+<a href="assets/research-pipeline.svg#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/research-pipeline-mobile.svg">
+    <img src="assets/research-pipeline.svg" width="960" alt="Perception → Generation → Reasoning → Deployment. Research interests and engineering workflows; expanded text follows.">
+  </picture>
+</a>
+<a href="assets/research-pipeline-light.svg#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/research-pipeline-mobile-light.svg">
+    <img src="assets/research-pipeline-light.svg" width="960" alt="Perception → Generation → Reasoning → Deployment. Research interests and engineering workflows; expanded text follows.">
+  </picture>
+</a>
 
-## Engineering stack
+<details>
+<summary>Read the research areas</summary>
 
-**AI / ML** &nbsp; Python · PyTorch · Transformers · MediaPipe  
-**Backend** &nbsp; FastAPI · REST APIs · Pydantic  
-**Frontend** &nbsp; React · Next.js · TypeScript · JavaScript  
-**Data & deployment** &nbsp; Supabase · PostgreSQL · Vercel  
-**Development** &nbsp; Git · GitHub · Vitest
+- **Perception:** computer vision, deep learning, remote sensing.
+- **Generation:** transformers, generative models, image-to-image translation.
+- **Reasoning:** multimodal AI, evidence fusion, temporal understanding.
+- **Deployment:** inference APIs, evaluation, AI-assisted engineering.
 
-## Recognition
+</details>
 
-| Result | Event |
+## Capability matrix
+
+| Capability | Tools I use |
+| :--- | :--- |
+| **Train & interpret** | Python · PyTorch · Transformers · MediaPipe |
+| **Serve & validate** | FastAPI · REST APIs · Pydantic |
+| **Build interfaces** | React · Next.js · TypeScript · JavaScript |
+| **Model & secure data** | Supabase · PostgreSQL |
+| **Deploy & automate** | Vercel · GitHub Actions |
+| **Version & test** | Git · GitHub · Vitest |
+
+## Engineering log
+
+<sub>LOG://RECOGNITION</sub>
+
+| Result | Build log |
 | :--- | :--- |
 | **1st / 130 teams** | Inception 2.0 · GDG |
 | **3rd place** | Push, Pull, Commit · IEEE Computer Society, BMSIT&M |
 
-## GitHub activity
+## GitHub telemetry
 
-[View my contribution history and recent work ↗](https://github.com/AnirudhShashikumar?tab=overview)
+A dated snapshot of public project activity, refreshed daily from GitHub. Push dates describe repository updates, not deployment health or personal productivity.
+
+<!-- telemetry:start -->
+<a href="assets/generated/telemetry.json#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile.svg">
+    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 5 source projects, 2 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-09-13 20:03:46 UTC. Full snapshot follows as text.">
+  </picture>
+</a>
+<a href="assets/generated/telemetry.json#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile-light.svg">
+    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 5 source projects, 2 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-09-13 20:03:46 UTC. Full snapshot follows as text.">
+  </picture>
+</a>
 
 <details>
-<summary>Explore the contribution snake</summary>
+<summary>Read the snapshot and its scope</summary>
+
+**Snapshot:** 2026-09-13 20:03:46 UTC · **5 public source projects** · **2 pushed in the last 90 days**.<br>
+**Primary repository languages:** TypeScript, JavaScript, Python.
+
+- [Dayflow](https://github.com/AnirudhShashikumar/Dayflow) — last repository push: **2026-09-13 UTC**.
+- [SatQuery-AI](https://github.com/AnirudhShashikumar/SatQuery-AI) — last repository push: **2026-09-11 UTC**.
+
+Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded. Primary language means GitHub's repository classification, not proficiency. Counts include all qualifying projects; the profile features a curated subset. These figures are a dated snapshot, not a live availability indicator.
+
+[Machine-readable snapshot](assets/generated/telemetry.json) · [GitHub source](https://github.com/AnirudhShashikumar?tab=repositories)
+
+</details>
+<!-- telemetry:end -->
+
+[Inspect the public repositories ↗](https://github.com/AnirudhShashikumar?tab=repositories)
+
+### Contribution signal
+
+<details>
+<summary>Follow the signal through my contribution history</summary>
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/generated/contributions-static.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/generated/contributions-dark.svg">
-  <img src="assets/generated/contributions.svg" width="960" alt="Contribution snake generated from my actual GitHub contribution calendar. Available after the first successful workflow run.">
+  <img src="assets/generated/contributions.svg" width="960" alt="A cyan signal traverses Anirudh Shashikumar's actual GitHub contribution calendar. A static calendar is selected for reduced-motion readers.">
 </picture>
 
-<sub>Refreshed daily from GitHub's contribution calendar. The animation is a visualization, not a performance metric.</sub>
+<sub>GitHub contribution history · daily refresh · light, dark, and static views.</sub>
 
 </details>
 
@@ -119,7 +194,3 @@ SatQuery AI brings natural-language queries, single-image analysis, optical + SA
 **Let's build systems that see, reason, and act.**
 
 [LinkedIn ↗](https://www.linkedin.com/in/anirudh-shashikumar) &nbsp; / &nbsp; [Email ↗](mailto:Anirudh.shashikumar@gmail.com) &nbsp; / &nbsp; [GitHub ↗](https://github.com/AnirudhShashikumar)
-
-<sub>Portfolio: to be added</sub>
-
-<!-- Maintainer setup and source notes: docs/PROFILE-MAINTENANCE.md. -->

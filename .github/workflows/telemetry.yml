@@ -1,0 +1,54 @@
+name: Refresh public project telemetry
+
+on:
+  schedule:
+    - cron: '43 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/telemetry.yml'
+      - 'scripts/generate_telemetry.py'
+      - 'scripts/build_visuals.py'
+      - 'tests/test_telemetry.py'
+
+permissions:
+  contents: read
+
+# Share the existing writer lock without editing the proven contribution workflow.
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'AnirudhShashikumar/AnirudhShashikumar' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the current default branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; same verified pin as the contribution workflow
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Check telemetry data boundaries
+        run: python3 -m unittest discover -s tests -v
+      - name: Fetch and render public GitHub data
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/generate_telemetry.py
+      - name: Commit the successful snapshot
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- README.md assets/generated/telemetry.svg assets/generated/telemetry-light.svg assets/generated/telemetry-mobile.svg assets/generated/telemetry-mobile-light.svg assets/generated/telemetry.json
+          if git diff --cached --quiet; then
+            echo 'The public project snapshot is unchanged.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh public project telemetry [skip ci]'
+          git push origin "HEAD:${DEFAULT_BRANCH}"

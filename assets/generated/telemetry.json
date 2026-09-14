@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-09-13T20:03:46Z",
+  "source": "https://github.com/AnirudhShashikumar?tab=repositories",
+  "api": "https://api.github.com/users/AnirudhShashikumar/repos",
+  "scope": "Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded.",
+  "window_days": 90,
+  "public_project_count": 5,
+  "recently_pushed_count": 2,
+  "primary_languages": [
+    "TypeScript",
+    "JavaScript",
+    "Python"
+  ],
+  "recent_projects": [
+    {
+      "name": "Dayflow",
+      "url": "https://github.com/AnirudhShashikumar/Dayflow",
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-09-13T18:36:20Z"
+    },
+    {
+      "name": "SatQuery-AI",
+      "url": "https://github.com/AnirudhShashikumar/SatQuery-AI",
+      "primary_language": "Python",
+      "pushed_at": "2026-09-11T19:18:51Z"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "Dayflow",
+      "url": "https://github.com/AnirudhShashikumar/Dayflow",
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-09-13T18:36:20Z"
+    },
+    {
+      "name": "gesture-globe",
+      "url": "https://github.com/AnirudhShashikumar/gesture-globe",
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-04-26T11:55:41Z"
+    },
+    {
+      "name": "MediFit",
+      "url": "https://github.com/AnirudhShashikumar/MediFit",
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-05-14T17:43:20Z"
+    },
+    {
+      "name": "SatQuery-AI",
+      "url": "https://github.com/AnirudhShashikumar/SatQuery-AI",
+      "primary_language": "Python",
+      "pushed_at": "2026-09-11T19:18:51Z"
+    },
+    {
+      "name": "TwinFit",
+      "url": "https://github.com/AnirudhShashikumar/TwinFit",
+      "primary_language": "JavaScript",
+      "pushed_at": "2026-05-05T19:16:20Z"
+    }
+  ]
+}
