@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T07:55:41Z",
+  "generated_at": "2026-09-21T08:12:40Z",
   "source": "https://github.com/AnirudhShashikumar?tab=repositories",
   "api": "https://api.github.com/users/AnirudhShashikumar/repos",
   "scope": "Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded.",
@@ -13,16 +13,16 @@
   ],
   "recent_projects": [
     {
+      "name": "SatQuery-AI",
+      "url": "https://github.com/AnirudhShashikumar/SatQuery-AI",
+      "primary_language": "Python",
+      "pushed_at": "2026-09-20T17:27:46Z"
+    },
+    {
       "name": "Myportfolio",
       "url": "https://github.com/AnirudhShashikumar/Myportfolio",
       "primary_language": "TypeScript",
       "pushed_at": "2026-09-16T14:51:05Z"
-    },
-    {
-      "name": "Dayflow",
-      "url": "https://github.com/AnirudhShashikumar/Dayflow",
-      "primary_language": "TypeScript",
-      "pushed_at": "2026-09-13T20:07:15Z"
     }
   ],
   "repositories": [
@@ -54,7 +54,7 @@
       "name": "SatQuery-AI",
       "url": "https://github.com/AnirudhShashikumar/SatQuery-AI",
       "primary_language": "Python",
-      "pushed_at": "2026-09-11T19:18:51Z"
+      "pushed_at": "2026-09-20T17:27:46Z"
     },
     {
       "name": "TwinFit",
