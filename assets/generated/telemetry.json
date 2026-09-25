@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T07:49:20Z",
+  "generated_at": "2026-09-25T08:11:18Z",
   "source": "https://github.com/AnirudhShashikumar?tab=repositories",
   "api": "https://api.github.com/users/AnirudhShashikumar/repos",
   "scope": "Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded.",
@@ -8,7 +8,6 @@
   "recently_pushed_count": 4,
   "primary_languages": [
     "TypeScript",
-    "HTML",
     "JavaScript",
     "Python"
   ],
@@ -16,8 +15,8 @@
     {
       "name": "Yoga-website",
       "url": "https://github.com/AnirudhShashikumar/Yoga-website",
-      "primary_language": "HTML",
-      "pushed_at": "2026-09-23T19:07:03Z"
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-09-24T18:04:54Z"
     },
     {
       "name": "SatQuery-AI",
@@ -66,8 +65,8 @@
     {
       "name": "Yoga-website",
       "url": "https://github.com/AnirudhShashikumar/Yoga-website",
-      "primary_language": "HTML",
-      "pushed_at": "2026-09-23T19:07:03Z"
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-09-24T18:04:54Z"
     }
   ]
 }
