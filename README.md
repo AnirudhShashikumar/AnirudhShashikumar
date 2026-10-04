@@ -144,24 +144,24 @@ A dated snapshot of public project activity, refreshed daily from GitHub. Push d
 <a href="assets/generated/telemetry.json#gh-dark-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile.svg">
-    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 8 source projects, 5 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-10-03 08:34:06 UTC. Full snapshot follows as text.">
+    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 7 source projects, 4 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-10-04 08:49:07 UTC. Full snapshot follows as text.">
   </picture>
 </a>
 <a href="assets/generated/telemetry.json#gh-light-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile-light.svg">
-    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 8 source projects, 5 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-10-03 08:34:06 UTC. Full snapshot follows as text.">
+    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 7 source projects, 4 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-10-04 08:49:07 UTC. Full snapshot follows as text.">
   </picture>
 </a>
 
 <details>
 <summary>Read the snapshot and its scope</summary>
 
-**Snapshot:** 2026-10-03 08:34:06 UTC · **8 public source projects** · **5 pushed in the last 90 days**.<br>
+**Snapshot:** 2026-10-04 08:49:07 UTC · **7 public source projects** · **4 pushed in the last 90 days**.<br>
 **Primary repository languages:** TypeScript, JavaScript, Python.
 
-- [Anirudh-Portfolio](https://github.com/AnirudhShashikumar/Anirudh-Portfolio) — last repository push: **2026-10-02 UTC**.
 - [Myportfolio](https://github.com/AnirudhShashikumar/Myportfolio) — last repository push: **2026-10-02 UTC**.
+- [Yoga-website](https://github.com/AnirudhShashikumar/Yoga-website) — last repository push: **2026-09-27 UTC**.
 
 Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded. Primary language means GitHub's repository classification, not proficiency. Counts include all qualifying projects; the profile features a curated subset. These figures are a dated snapshot, not a live availability indicator.
 
