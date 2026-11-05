@@ -144,24 +144,24 @@ A dated snapshot of public project activity, refreshed daily from GitHub. Push d
 <a href="assets/generated/telemetry.json#gh-dark-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile.svg">
-    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 7 source projects, 4 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-11-03 10:05:26 UTC. Full snapshot follows as text.">
+    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 9 source projects, 6 pushed in 90 days. Primary languages: TypeScript, Python, JavaScript. Refreshed 2026-11-05 09:51:09 UTC. Full snapshot follows as text.">
   </picture>
 </a>
 <a href="assets/generated/telemetry.json#gh-light-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile-light.svg">
-    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 7 source projects, 4 pushed in 90 days. Primary languages: TypeScript, JavaScript, Python. Refreshed 2026-11-03 10:05:26 UTC. Full snapshot follows as text.">
+    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 9 source projects, 6 pushed in 90 days. Primary languages: TypeScript, Python, JavaScript. Refreshed 2026-11-05 09:51:09 UTC. Full snapshot follows as text.">
   </picture>
 </a>
 
 <details>
 <summary>Read the snapshot and its scope</summary>
 
-**Snapshot:** 2026-11-03 10:05:26 UTC · **7 public source projects** · **4 pushed in the last 90 days**.<br>
-**Primary repository languages:** TypeScript, JavaScript, Python.
+**Snapshot:** 2026-11-05 09:51:09 UTC · **9 public source projects** · **6 pushed in the last 90 days**.<br>
+**Primary repository languages:** TypeScript, Python, JavaScript.
 
-- [Myportfolio](https://github.com/AnirudhShashikumar/Myportfolio) — last repository push: **2026-10-26 UTC**.
-- [Yoga-website](https://github.com/AnirudhShashikumar/Yoga-website) — last repository push: **2026-09-27 UTC**.
+- [GhostTrace](https://github.com/AnirudhShashikumar/GhostTrace) — last repository push: **2026-11-05 UTC**.
+- [GhostTrace-main](https://github.com/AnirudhShashikumar/GhostTrace-main) — last repository push: **2026-11-04 UTC**.
 
 Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded. Primary language means GitHub's repository classification, not proficiency. Counts include all qualifying projects; the profile features a curated subset. These figures are a dated snapshot, not a live availability indicator.
 
