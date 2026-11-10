@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T10:22:16Z",
+  "generated_at": "2026-11-10T10:27:20Z",
   "source": "https://github.com/AnirudhShashikumar?tab=repositories",
   "api": "https://api.github.com/users/AnirudhShashikumar/repos",
   "scope": "Public, non-fork, non-archived, enabled, non-empty repositories owned by AnirudhShashikumar; profile repository excluded.",
@@ -13,16 +13,16 @@
   ],
   "recent_projects": [
     {
+      "name": "Yoga-website",
+      "url": "https://github.com/AnirudhShashikumar/Yoga-website",
+      "primary_language": "TypeScript",
+      "pushed_at": "2026-11-10T09:51:10Z"
+    },
+    {
       "name": "GhostTrace",
       "url": "https://github.com/AnirudhShashikumar/GhostTrace",
       "primary_language": "Python",
       "pushed_at": "2026-11-05T05:59:57Z"
-    },
-    {
-      "name": "GhostTrace-main",
-      "url": "https://github.com/AnirudhShashikumar/GhostTrace-main",
-      "primary_language": "Python",
-      "pushed_at": "2026-11-04T22:26:04Z"
     }
   ],
   "repositories": [
@@ -78,7 +78,7 @@
       "name": "Yoga-website",
       "url": "https://github.com/AnirudhShashikumar/Yoga-website",
       "primary_language": "TypeScript",
-      "pushed_at": "2026-09-27T09:52:44Z"
+      "pushed_at": "2026-11-10T09:51:10Z"
     }
   ]
 }
