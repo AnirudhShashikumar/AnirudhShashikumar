@@ -144,20 +144,20 @@ A dated snapshot of public project activity, refreshed daily from GitHub. Push d
 <a href="assets/generated/telemetry.json#gh-dark-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile.svg">
-    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 10 source projects, 7 pushed in 90 days. Primary languages: TypeScript, Python, HTML, JavaScript. Refreshed 2026-11-27 11:26:15 UTC. Full snapshot follows as text.">
+    <img src="assets/generated/telemetry.svg" width="960" alt="Public snapshot: 10 source projects, 7 pushed in 90 days. Primary languages: TypeScript, Python, HTML, JavaScript. Refreshed 2026-11-28 10:54:29 UTC. Full snapshot follows as text.">
   </picture>
 </a>
 <a href="assets/generated/telemetry.json#gh-light-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/telemetry-mobile-light.svg">
-    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 10 source projects, 7 pushed in 90 days. Primary languages: TypeScript, Python, HTML, JavaScript. Refreshed 2026-11-27 11:26:15 UTC. Full snapshot follows as text.">
+    <img src="assets/generated/telemetry-light.svg" width="960" alt="Public snapshot: 10 source projects, 7 pushed in 90 days. Primary languages: TypeScript, Python, HTML, JavaScript. Refreshed 2026-11-28 10:54:29 UTC. Full snapshot follows as text.">
   </picture>
 </a>
 
 <details>
 <summary>Read the snapshot and its scope</summary>
 
-**Snapshot:** 2026-11-27 11:26:15 UTC · **10 public source projects** · **7 pushed in the last 90 days**.<br>
+**Snapshot:** 2026-11-28 10:54:29 UTC · **10 public source projects** · **7 pushed in the last 90 days**.<br>
 **Primary repository languages:** TypeScript, Python, HTML, JavaScript.
 
 - [MARTIAN](https://github.com/AnirudhShashikumar/MARTIAN) — last repository push: **2026-11-26 UTC**.
